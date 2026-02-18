@@ -10,7 +10,8 @@
   "dependencies": {
     "astro": "^5.8.1",
     "@astrojs/starlight": "^0.34.0",
-    "sharp": "^0.34.3"
+    "sharp": "^0.34.3",
+    "starlight-block-theme": "file:../starlight-block-theme"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

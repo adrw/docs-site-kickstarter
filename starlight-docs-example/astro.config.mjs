@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import { blockThemePlugin } from './src/plugins/starlight-block-theme';
+import { blockThemePlugin } from 'starlight-block-theme';
 
 export default defineConfig({
   integrations: [
@@ -76,7 +76,6 @@ export default defineConfig({
           ],
         },
       ],
-      customCss: ['./src/styles/block-theme.css'],
     }),
   ],
 });

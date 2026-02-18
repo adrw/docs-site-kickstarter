@@ -10,8 +10,12 @@ export function blockThemePlugin(): StarlightPlugin {
   return {
     name: 'starlight-block-theme',
     hooks: {
-      'config:setup'({ updateConfig }) {
+      'config:setup'({ config, updateConfig }) {
         updateConfig({
+          customCss: [
+            'starlight-block-theme/styles',
+            ...(config.customCss ?? []),
+          ],
           expressiveCode: {
             themes: ['github-light', 'github-dark'],
             styleOverrides: {
